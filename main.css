@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*, 
+*::before,
+*::after {
+
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+
+    background: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+
+    padding: 3em 2em;
+    
+    
+}
+
+.illustration {
+    width: 100%;
+    margin-top: 3em;
+}
+
+main {
+    text-align: center;
+}
+
+
+.logo {
+    width: 6em;
+}
+
+h1 {
+    color: white;
+    margin-top: 2em;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4em;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(182, 181, 181);
+    margin-top: 1.4em;
+    font-size: .9rem;
+}
+
+button {
+    margin-top: 1.5em;
+    border-radius: 2em;
+    width: 17em;
+    height: 3em;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .7rem;
+    color: var(--Violet)
+    
+}
+
+button:hover {
+    background-color: var(--Soft-Magenta);
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:800px) {
+
+    .container {
+        padding: 6em;
+    }
+
+    body {
+        background: url(images/bg-desktop.svg);
+        background-color: var(--Violet);
+    }
+
+    main {
+        display: flex;
+        gap: .5em;
+        
+    }
+
+    .left-col { 
+
+        width: 50%;
+    }
+
+    
+
+   
+
+    .right-col {
+        width: 50%;
+        padding: 0 2em;
+        text-align: left;
+        
+    }
+
+    p {
+        min-height: 10vh;
+        font-size: .7rem;
+        
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h1 , p {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width:1060px) {
+
+    h1 { 
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    h1 , p {
+        max-width: 90%;
+    }
+
+    
+    .right-col {
+        padding: 2em;
+        
+    }
+}
+
+@media only screen and (min-width:1440px) {
+
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 7em;
+    }
+
+    h1  {
+        font-size: 2.3rem;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    .logo {
+        width: 8em;
+    }
+}
